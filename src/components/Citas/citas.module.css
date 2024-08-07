@@ -1,0 +1,45 @@
+.cita{
+    background-color: #D5BDAF;
+    border: 2px solid #524A45;
+    border-left: 10px solid #524A45;
+    border-radius: 5px;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-align: start;
+    box-shadow: 10px 5px 5px 0 #0002;
+    min-width: 20rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.citas__titulo{
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.cita__nombre{
+    font-size: 2rem;
+    border-bottom: 2px solid #524A45;
+    text-transform: capitalize;
+}
+
+.cita__info{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+}
+
+.cita__precio{
+    color: #EDEDE9;
+}
+
+.cita__eliminar{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
