@@ -3,6 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/contacto": "pages/contacto.js",
-  "/reservas": "pages/reservas.js"
+  "/reservas": "pages/reservas.js",
+  "/quienes-somos": "pages/quienes-somos.js",
+  "/Home": "pages/Home.js",
+  "/contacto": "pages/contacto.js"
 }

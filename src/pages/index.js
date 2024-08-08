@@ -1,23 +1,16 @@
-import Navbar from '../components/Navbar/Navbar';
-import Form from '../components/Form/Form';
-import Citas from '../components/Citas/Citas';
-import { useState } from 'react';
 
-const Index = () => {
-  const [citas, setCitas] = useState([]);
 
+
+export default function Home() {
   return (
-    <>
-  
-      <div className="App">
-        <h1 className="titulo">ADMINISTRADOR DE NEGOCIOS DE SILLONES</h1>
-        <div className='cuerpo'>
-          <Form citas={citas} setCitas={setCitas} />
-          <Citas citas={citas} setCitas={setCitas} />
-        </div>
+    <div className="Home">
+      <h1>Bienvenido a nuestra página principal</h1>
+      <p>Esta es la página de inicio.</p>
+      <div className="butonH">
+        <a href="/reservas">
+          <button>Reserva una cita!</button>
+        </a> 
       </div>
-    </>
+    </div>
   );
-};
-
-export default Index;
+}

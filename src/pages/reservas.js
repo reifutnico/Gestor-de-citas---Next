@@ -1,14 +1,23 @@
-import React from 'react';
+import Navbar from '../components/Navbar/Navbar';
+import Form from '../components/Form/Form';
+import Citas from '../components/Citas/Citas';
+import { useState } from 'react';
 
-const Card = ({ mascota, propietario, fecha, hora, sintomas, onDelete }) => (
-  <div className="cita">
-    <p>Mascota: <span>{mascota}</span></p>
-    <p>Dueño: <span>{propietario}</span></p>
-    <p>Fecha: <span>{fecha}</span></p>
-    <p>Hora: <span>{hora}</span></p>
-    <p>Sintomas: <span>{sintomas}</span></p>
-    <Button className="eliminar u-full-width" onClick={onDelete}>Eliminar ×</Button>
-  </div>
-);
+const Index = () => {
+  const [citas, setCitas] = useState([]);
 
-export default Card;
+  return (
+    <>
+  
+      <div className="App">
+        <h1 className="titulo">ADMINISTRADOR DE NEGOCIOS DE SILLONES</h1>
+        <div className='cuerpo'>
+          <Form citas={citas} setCitas={setCitas} />
+          <Citas citas={citas} setCitas={setCitas} />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Index;

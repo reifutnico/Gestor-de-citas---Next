@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <Link href="/pages/Home.js">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li className={styles.navItem}>
           <Link href="/quienes-somos">Quienes somos</Link>
@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link href="/reservas">Reservas</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/contacto">Ayuda</Link>
+          <Link href="/contacto">Contacto</Link>
         </li>
       </ul>
     </nav>
